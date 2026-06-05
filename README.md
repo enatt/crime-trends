@@ -26,14 +26,17 @@ Because Orange requires .csv data, I then used the Newman CLI and the `newman-re
 # Sample Visualizations
 
 The code in `crime_trend_viz.ipynb` generates simple summary visualizations using `plotnine` to mimic the grmamar of graphics in R's `ggplot2`. This exercise was mostly for me to flex my Pandas muscles again, and to see how `plotnine` functions:
-![alt text](image-1.png)
+<img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/820423ae-2514-47cf-a036-30f7b01536d3" />
+
 
 For the first time, I used Orange's data visualizations tools to build simple charts detailing trends in crime throughout the past 5 years:
-![alt text](<Hate Crime Bar Chart.png>)
+<img width="1619" height="996" alt="Hate Crime Bar Chart" src="https://github.com/user-attachments/assets/089e9878-d78c-4b48-ab11-5ccf8598037f" />
+
 
 While the visualizations are pretty simple, Orange's visual programming makes for an interesting mental model of data processing: 
+v<img width="1265" height="781" alt="image" src="https://github.com/user-attachments/assets/2788f1a1-9744-4bac-b94d-b797da40bc71" />
 
-![alt text](<FBI Data Visualizations.svg>)
+
 
 The pipeline used in Orange is saved to `FBI Data Visualizations.ows`. 
 # AI Policy
