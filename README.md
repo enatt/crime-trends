@@ -19,7 +19,7 @@ I used the Postman VSCode extension to test calling the FBI's Crime Data API. Th
 newman run FBI.postman_collection.json --env-var "FBI_API_KEY=YOUR_KEY_HERE"
 ```
 
-Within the extension, I used the 'Send and Download' feature to locally save the response bodies to JSON files in `/data`. I used `pandas` and `plotnine` to do some data parsing and exploratory visualizations in a Python notebook.
+Within the extension, I used the 'Send and Download' feature to locally save the response bodies to JSON files in `/data`. While I tried to use post-response scripts in Postman to save the data for me, this turned out to be awkward. Then, I used `pandas` and `plotnine` to do some data parsing and exploratory visualizations in a Python notebook.
 
 Because Orange requires .csv data, I then used the Newman CLI and the `newman-reporter-csv` package to run the Postman collection and save results to a local file (not committed, as it contains authentication information). I used Claude Code to quickly parse those results into a better-formatted `data/crime_monthly.csv`. Then, I experimented with a variety of visualization tools in Orange, a visual programming language.
 
