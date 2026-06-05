@@ -1,0 +1,13 @@
+[project]
+name = "crime-trends"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "orange3>=3.39.0",
+    "pandas>=3.0.3",
+    "plotnine>=0.15.5",
+    "pyqt6>=6.11.0",
+    "pyqt6-webengine>=6.11.0",
+]

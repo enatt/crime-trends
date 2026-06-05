@@ -1,0 +1,288 @@
+{
+  "info": {
+    "_postman_id": "676b5005-3bb5-4496-aed5-e05f1737e488",
+    "name": "FBI Requests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55518221"
+  },
+  "item": [
+    {
+      "name": "GET Arrests 2020-2025",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.usa.gov/crime/fbi/cde/arrest/national/:offense?type=counts&from=01-2020&to=12-2025",
+          "protocol": "https",
+          "host": [
+            "api",
+            "usa",
+            "gov"
+          ],
+          "path": [
+            "crime",
+            "fbi",
+            "cde",
+            "arrest",
+            "national",
+            ":offense"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "counts",
+              "type": "text",
+              "id": 0,
+              "sortOrder": 0
+            },
+            {
+              "key": "from",
+              "value": "01-2020",
+              "type": "text",
+              "id": 1,
+              "sortOrder": 1
+            },
+            {
+              "key": "to",
+              "value": "12-2025",
+              "type": "text",
+              "id": 2,
+              "sortOrder": 2
+            }
+          ],
+          "variable": [
+            {
+              "id": 0,
+              "key": "offense",
+              "value": "all",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Violent 2020-2025",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.usa.gov/crime/fbi/cde/summarized/national/:offense?from=01-2020&to=12-2025",
+          "protocol": "https",
+          "host": [
+            "api",
+            "usa",
+            "gov"
+          ],
+          "path": [
+            "crime",
+            "fbi",
+            "cde",
+            "summarized",
+            "national",
+            ":offense"
+          ],
+          "query": [
+            {
+              "key": "from",
+              "value": "01-2020",
+              "id": 0
+            },
+            {
+              "key": "to",
+              "value": "12-2025",
+              "id": 1
+            }
+          ],
+          "variable": [
+            {
+              "id": 0,
+              "key": "offense",
+              "value": "V",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Property 2020-2025",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.usa.gov/crime/fbi/cde/summarized/national/:offense?from=01-2020&to=12-2025",
+          "protocol": "https",
+          "host": [
+            "api",
+            "usa",
+            "gov"
+          ],
+          "path": [
+            "crime",
+            "fbi",
+            "cde",
+            "summarized",
+            "national",
+            ":offense"
+          ],
+          "query": [
+            {
+              "key": "from",
+              "value": "01-2020",
+              "id": 0
+            },
+            {
+              "key": "to",
+              "value": "12-2025",
+              "id": 1
+            }
+          ],
+          "variable": [
+            {
+              "id": 0,
+              "key": "offense",
+              "value": "P",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET 2025 Use of Force",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.usa.gov/crime/fbi/cde/uof/reports/:grp/:spec/?year=2020&quarter=4",
+          "protocol": "https",
+          "host": [
+            "api",
+            "usa",
+            "gov"
+          ],
+          "path": [
+            "crime",
+            "fbi",
+            "cde",
+            "uof",
+            "reports",
+            ":grp",
+            ":spec",
+            ""
+          ],
+          "query": [
+            {
+              "key": "year",
+              "value": "2020",
+              "id": 0
+            },
+            {
+              "key": "quarter",
+              "value": "4",
+              "id": 1
+            }
+          ],
+          "variable": [
+            {
+              "id": 0,
+              "key": "grp",
+              "value": "A",
+              "type": "string"
+            },
+            {
+              "key": "spec",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Hate Crime 2020-2025",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.usa.gov/crime/fbi/cde/hate-crime/national?type=counts&from=01-2020&to=12-2025",
+          "protocol": "https",
+          "host": [
+            "api",
+            "usa",
+            "gov"
+          ],
+          "path": [
+            "crime",
+            "fbi",
+            "cde",
+            "hate-crime",
+            "national"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "counts",
+              "type": "text",
+              "id": 0
+            },
+            {
+              "key": "from",
+              "value": "01-2020",
+              "type": "text",
+              "id": 1
+            },
+            {
+              "key": "to",
+              "value": "12-2025",
+              "type": "text",
+              "id": 2
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "API_KEY",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{FBI_API_KEY}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "query",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "test",
+      "script": {
+        "exec": [
+          "let responses = pm.collectionVariables.has('collectionResponses') ? JSON.parse(pm.collectionVariables.get('collectionResponses')) : [];",
+          "",
+          "responses.push(pm.response.json());",
+          "",
+          "pm.collectionVariables.set('collectionResponses', JSON.stringify(responses));"
+        ],
+        "type": "text/javascript",
+        "packages": {}
+      }
+    }
+  ]
+}
